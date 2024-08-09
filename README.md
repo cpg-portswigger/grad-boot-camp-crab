@@ -1,55 +1,76 @@
 # Grad Boot Camp
 
-### Day 1
+## Day 1
 
-#### Task One
+- **Create a vulnerable web app**  
+  Develop a web application intentionally designed with security flaws for testing purposes.
 
- - Create a vunerable web app
- - Write unit tests
- - Introduction to Burp Pro (Presentation)
- - Scan the web app with Pro
+- **Write unit tests**  
+  Write automated tests to validate the functionality of individual components in the web app.
 
-#### Task Two
+- **Introduction to Burp Pro (Presentation)**  
+  Learn about Burp Pro, a tool for web vulnerability scanning and testing.
 
- - Create a CI/CD pipeline through GitHub Actions
- - Integrate unit tests in CI/CD pipeline - https://github.com/marketplace/actions/test-reporter
+- **Scan the web app with Pro**  
+  Use Burp Pro to identify security issues in the web application.
 
-#### Task Three
+## Day 2
 
- - Introduction to Burp Enterprise (Presentation)
- - Containerise app with Docker - https://github.com/abiosoft/colima
- - Scan the web app with enterprise
-  - You can log into
-    - https://acceptance.enterprise.staging.portswigger.com/
-    - Using the credentials:
-      - admin
-      - letmein
+- **Create a CI/CD pipeline through GitHub Actions**  
+  Set up continuous integration and continuous deployment (CI/CD) for the project using GitHub Actions.
 
-#### Task Three
+- **Integrate unit tests in CI/CD pipeline**  
+  Add unit tests to the CI/CD pipeline to ensure code quality and functionality. [GitHub Action for test reporting](https://github.com/marketplace/actions/test-reporter).
 
- - Scan the web app with CI driven scan
- - https://portswigger.net/burp/documentation/enterprise/integrate-ci-cd-platforms/ci-driven-nodash/getting-started
+- **Introduction to Burp Enterprise (Presentation)**  
+  Overview of Burp Enterprise, focusing on automated web vulnerability scanning.
 
-#### Task Four
+- **Containerize app with Docker**  
+  Package the web application into a container using Docker for consistent deployment. [Docker setup guide](https://github.com/abiosoft/colima).
 
- - How to write User Stories (Presentation)
- - Introduction to Scoping (Presentation)
- - Scope and Write User Stories on adding persistence layer to app, and scanning with Zap ????
- - https://formulae.brew.sh/cask/owasp-zap
+- **Scan the web app with Enterprise**  
+  Perform an in-depth security scan of the web app using Burp Enterprise. Access at [Burp Enterprise](https://acceptance.enterprise.staging.portswigger.com/) with credentials:
+  - Username: admin
+  - Password: letmein
 
-#### Task Five
+## Day 3
 
- - Introduce new SQL injection vunerability into app
- - Test existence of new vunerability with Burp products and Zap
+- **Scan the web app with CI driven scan**  
+  Automate security scans in the CI/CD pipeline using Burp Enterprise. [CI driven scan guide](https://portswigger.net/burp/documentation/enterprise/integrate-ci-cd-platforms/ci-driven-nodash/getting-started).
 
-#### Task Six
+- **How to write User Stories (Presentation)**  
+  Learn the process of creating user stories for agile development.
 
- - How to do a good demo (Presentation)
- - Prepare demo slides
- - Practice demo
+- **Introduction to Scoping (Presentation)**  
+  Understand the importance of scoping in project management.
 
-#### Task Seven
+- **Scope and Write User Stories on adding persistence layer to app, and scanning with Zap**  
+  Plan and document user stories for enhancing the app's persistence layer and using Zap for security scans. [OWASP Zap tool](https://formulae.brew.sh/cask/owasp-zap).
 
- - Revise demo from feedback 
- - Present Demo to TPMs
- - Retro
+## Day 4
+
+- **Introduce new SQL injection vulnerability into app**  
+  Add a deliberate SQL injection vulnerability to the web app for testing purposes.
+
+- **Test existence of new vulnerability with Burp products and Zap**  
+  Verify the new SQL injection vulnerability using Burp Suite tools and OWASP Zap.
+
+- **How to do a good demo (Presentation)**  
+  Tips and best practices for delivering effective demonstrations.
+
+- **Prepare demo slides**  
+  Create slides to present the web app and security testing process.
+
+## Day 5
+
+- **Practice demo**  
+  Rehearse the demo to ensure smooth delivery.
+
+- **Revise demo from feedback**  
+  Refine the demo based on feedback received during practice sessions.
+
+- **Present Demo to TPMs**  
+  Deliver the final demo presentation to Technical Program Managers (TPMs).
+
+- **Retrospective**  
+  Review and reflect on the week's activities, discussing what went well and areas for improvement.
