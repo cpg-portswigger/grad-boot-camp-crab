@@ -2,7 +2,7 @@
 
 ## Day 1
 
-- **Introduction & Set up**  
+- **Introduction & setup**  
   Meet your fellow boot campers and set up your new MacBooks. Ensure all necessary software and tools are installed and configured.
 
 - **Create a vulnerable web app**  
