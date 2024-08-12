@@ -2,6 +2,9 @@
 
 ## Day 1
 
+- **Introduction & Set up**  
+  Meet your fellow boot campers and set up your new MacBooks. Ensure all necessary software and tools are installed and configured.
+
 - **Create a vulnerable web app**  
   Develop a web application intentionally designed with security flaws for testing purposes.
 
