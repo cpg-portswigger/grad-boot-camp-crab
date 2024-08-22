@@ -41,8 +41,8 @@
 - **Scan the web app with CI driven scan**  
   Automate security scans in the CI/CD pipeline using Burp Enterprise. [CI driven scan guide](https://portswigger.net/burp/documentation/enterprise/integrate-ci-cd-platforms/ci-driven-nodash/getting-started).
 
-- **How to write User Stories (Presentation)**  
-  Learn the process of creating user stories for agile development.
+- **How to write User Stories**  
+  Learn the process of creating user stories for agile development. [Presentation](https://docs.google.com/presentation/d/1L0e77gvSEB3F8lM1a-xBEuwfvHiaTckuZw_ngmFGMsk/edit?pli=1#slide=id.gf2cf3d5733_0_0)
 
 - **Introduction to Scoping (Presentation)**  
   Understand the importance of scoping in project management.
