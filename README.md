@@ -1,9 +1,12 @@
 # Grad Boot Camp
 
-## Day 1
+## [Day 1](syllabus/day_one.md)
 
 - **Introduction & setup**  
   Meet your fellow boot campers and set up your new MacBooks. Ensure all necessary software and tools are installed and configured.
+
+- **Introduction to pairing (Presentation)**  
+Learn about pair programming and its benefits.
 
 - **Create a vulnerable web app**  
   Develop a web application intentionally designed with security flaws for testing purposes.
@@ -43,9 +46,6 @@
 
 - **How to write User Stories**  
   Learn the process of creating user stories for agile development. [Presentation](https://docs.google.com/presentation/d/1L0e77gvSEB3F8lM1a-xBEuwfvHiaTckuZw_ngmFGMsk/edit?pli=1#slide=id.gf2cf3d5733_0_0)
-
-- **Introduction to Scoping (Presentation)**  
-  Understand the importance of scoping in project management.
 
 - **Scope and Write User Stories on adding persistence layer to app, and scanning with Zap**  
   Plan and document user stories for enhancing the app's persistence layer and using Zap for security scans. [OWASP Zap tool](https://formulae.brew.sh/cask/owasp-zap).
