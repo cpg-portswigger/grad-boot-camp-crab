@@ -1,6 +1,6 @@
 # Grad Boot Camp
 
-## [Day 1](syllabus/day_one.md)
+## [Day 1](syllabus/day_1.md)
 
 - **Introduction & setup**  
   Meet your fellow boot campers and set up your new MacBooks. Ensure all necessary software and tools are installed and configured.
@@ -64,7 +64,7 @@ Learn about pair programming and its benefits.
 - **Prepare demo slides**  
   Create slides to present the web app and security testing process.
 
-## Day 5
+## [Day 5](syllabus/day_5.md)
 
 - **Practice demo**  
   Rehearse the demo to ensure smooth delivery.
