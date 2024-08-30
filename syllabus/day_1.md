@@ -18,7 +18,7 @@ Take your first steps towards creating a vulnerable web application intentionall
 
 Create a new repo to share with your pairing partner, using the source code from the [vulnerable-web-app](/vulnerable-web-app) repository folder. This will act as a base for the web application you will be working on later in the bootcamp.
 
-## Introduction to Burp Pro (Presentation)
+## Introduction to Burp Pro (Presentation) (~1 hour)
 
 Learn about Burp Suite Pro, our tool used by pen testers across the globe for scanning and testing for vulnerabilities on the web.
 
