@@ -17,7 +17,7 @@ Welcome to the Portswigger Bootcamp! Here's a quick peek at what we'll be diving
 ## Day 3 - [Scanning, Scoping, and Sabotaging](syllabus/day_3.md)
 
 - Automate security scans in your CI/CD pipeline.
-- Dive into scoping work and add new vulnerabilities to your app.
+- Learn about scoping, and use these new-found skills to add a new vulnerability to your app... on purpose!
 
 ## Day 4 - [Demo Preparation](syllabus/day_4.md)
 
