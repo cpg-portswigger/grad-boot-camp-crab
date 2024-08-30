@@ -1,31 +1,27 @@
 # Day 1
 
-## Introduction & setup
- 
-Introduce yourself and meet your fellow boot campers. Set up your new MacBooks, ensuring all necessary software and tools are installed and configured for the day.
+## Introduction & setup** (~1.5 hours)  
 
-## Introduction to pairing (Presentation)
+Meet your fellow boot campers and set up your new MacBooks. Ensure all necessary software and tools are installed and configured.
 
-Learn about pair programming and its benefits.
+## Introduction to pairing** (~15 minutes)  
 
-## Create a vulnerable web app  
+Learn about pair programming and its benefits. (Presentation)
 
-Develop a web application intentionally designed with security flaws for testing purposes.
+## How to write User Stories** (~1 hour)
+  
+Learn the process of creating user stories for agile development. ([Presentation](https://docs.google.com/presentation/d/1L0e77gvSEB3F8lM1a-xBEuwfvHiaTckuZw_ngmFGMsk/edit?pli=1#slide=id.gf2cf3d5733_0_0))
 
-Create a new repo to share with your pairing partner, using the source code from the [vulnerable-web-app](/vulnerable-web-app) repository folder. This will act as a base for the web application you will be working on throughout the boot camp.
+## The Vulnerable Web App - Phase 1** (~30 minutes)  
 
-## Add a vulnerability to your web app
+Take your first steps towards creating a vulnerable web application intentionally designed with security flaws for testing purposes. This comes with a built-in vulnerability that you will need to find with Burp.
 
-Decide upon a new vulnerability to add to your new web app, using an example you like the look of from our [Web Security Academy](https://portswigger.net/web-security).
+Create a new repo to share with your pairing partner, using the source code from the [vulnerable-web-app](/vulnerable-web-app) repository folder. This will act as a base for the web application you will be working on later in the bootcamp.
 
-Use TDD to write a failing test for the new vulnerability, then implement the vulnerability in your web app.
-
-## Introduction to Burp Pro (Presentation)  
+## Introduction to Burp Pro (Presentation)
 
 Learn about Burp Suite Pro, our tool used by pen testers across the globe for scanning and testing for vulnerabilities on the web.
 
-Exploit your newly added vulnerability manually.
+## Scan the Vulnerable Web App with Burp Pro**  (~15 minutes)
 
-## Scan the web app with Pro
-
-Use Burp Suite Pro to identify security issues in the web application. You should find your new vulnerability!
+Use Burp Suite Pro to identify security issues in the web application. You should find the existing vulnerability!
