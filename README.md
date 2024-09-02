@@ -1,6 +1,6 @@
 # Grad Bootcamp
 
-Welcome to the Portswigger Bootcamp! Here's a quick peek at what we'll be diving into each day:
+Welcome to the PortSwigger Bootcamp! Here's a quick peek at what we'll be diving into each day:
 
 ## Day 1 - [Introductions, Setup, and Burp Pro](syllabus/day_1.md)
 
