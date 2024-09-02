@@ -8,7 +8,7 @@ Set up continuous integration and continuous deployment (CI/CD) for the project 
 
 Add unit tests to the CI/CD pipeline to ensure code quality and functionality. [GitHub Action for test reporting](https://github.com/marketplace/actions/test-reporter).
 
-## Introduction to Burp Enterprise  (~30 minutes)  
+## Introduction to Burp Enterprise  (~1 hour)  
 
 Overview of Burp Enterprise, focusing on automated web vulnerability scanning.  (Presentation)
 
