@@ -8,7 +8,7 @@ Automate security scans in the CI/CD pipeline using Burp Enterprise. [CI driven 
 
 Learn the process of scoping work for a project. (Presentation)
 
-## The Vulnerable Web App - Phase 2 (~4 hours)  
+## The Vulnerable Web App - Phase 2 (~3.5 hours)  
 
 Use your newfound scoping skills to plan and implement a new vulnerability in the vulnerable web app.
 
