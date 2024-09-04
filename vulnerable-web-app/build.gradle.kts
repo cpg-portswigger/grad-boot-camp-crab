@@ -20,6 +20,13 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
+tasks.test {
+    reports {
+        junitXml.required.set(true)
+        html.required.set(false)
+    }
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }

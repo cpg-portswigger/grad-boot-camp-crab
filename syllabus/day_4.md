@@ -1,4 +1,4 @@
-# Day 3
+# Day 4
 
 ## How to do a good demo (~30 minutes)
 

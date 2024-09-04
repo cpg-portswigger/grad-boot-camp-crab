@@ -73,3 +73,9 @@ main {
   max-width: 800px;
   height: 100vh;
 }
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
