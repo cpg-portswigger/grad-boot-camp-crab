@@ -34,13 +34,13 @@ public class BootCampController
     @GetMapping("/secure/")
     public String secure(HttpServletRequest request)
     {
-        // Commenting this out for testing purposes, I'm sure I'll remember to remove it later...
-        //String authCookieValue = getCookieValue(request, "authenticated");
-        //if ("true".equals(authCookieValue))
-        //{
+        //Commenting this out for testing purposes, I'm sure I'll remember to remove it later...
+        String authCookieValue = getCookieValue(request, "authenticated");
+        if ("true".equals(authCookieValue))
+        {
             return "secure";
-        //}
-        //return "redirect:/";
+        }
+        return "redirect:/";
     }
 
     @GetMapping("/loadImage")
