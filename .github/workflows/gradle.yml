@@ -38,17 +38,16 @@ jobs:
           cd vulnerable-web-app
           ./gradlew build
 
-    - name: Deploy to my EC2 instance
+    - name: Deploy and run on EC2 instance
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
         SSH_PRIVATE_KEY: ${{ secrets.CRABPEM }}
-        SOURCE: "./"
+        SOURCE: "./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar"
         REMOTE_HOST: "ec2-13-60-29-54.eu-north-1.compute.amazonaws.com"
         REMOTE_USER: "ec2-user"
         TARGET: "/home/ec2-user/crab"
         SCRIPT_AFTER: |
-          cd /home/ec2-user/crab/vulnerable-web-app
-          ./gradlew run
+          java -jar /home/ec2-user/crab/vulnerable-web-app-1.0-SNAPSHOT.jar
 
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
