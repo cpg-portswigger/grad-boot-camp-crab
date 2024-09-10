@@ -2,6 +2,8 @@ package org.example;
 
 import jakarta.servlet.http.Cookie;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -71,5 +73,19 @@ class BootCampControllerTest {
                 .andExpect(status().is3xxRedirection())
                 .andExpect(header().string(HttpHeaders.LOCATION, "/"))
                 .andExpect(cookie().value("authenticated", "false"));
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/filePathTraversal.csv", numLinesToSkip = 0)
+    void testFilePathTraversalVulnerability(String attack) throws Exception {
+        MockHttpSession session = new MockHttpSession();
+        session.setAttribute("authenticated", true);
+
+        mockMvc.perform(get("/loadImage")
+                        .param("imagePath",attack)
+                        .session(session))
+
+                .andExpect(status().isNotFound());
+
     }
 }
