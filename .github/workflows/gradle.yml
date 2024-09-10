@@ -44,13 +44,15 @@ jobs:
         cd vulnerable-web-app
         ./gradlew test
 
-    - name: Report Test Results
-      uses: dorny/test-reporter@v1
-      if: always()
+    - name: Publish Test Report
+      if: always()                                    # Forces this step to always run
+      continue-on-error: true
+      uses: mikepenz/action-junit-report@v4
       with:
-        name: JUnit Tests
-        path: ./vulnerable-web-app/build/test-results/test/*.xml
-        reporter: java-junit
+        report_paths: 'vulnerable-web-app/build/test-results/test/TEST-*.xml'
+        fail_on_failure: false
+        require_tests: false
+        include_passed: true
 
 
 #    - name: Upload JAR Artefact
