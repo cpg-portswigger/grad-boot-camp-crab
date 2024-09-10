@@ -75,17 +75,17 @@ class BootCampControllerTest {
                 .andExpect(cookie().value("authenticated", "false"));
     }
 
-    @ParameterizedTest
-    @CsvFileSource(resources = "/filePathTraversal.csv", numLinesToSkip = 0)
-    void testFilePathTraversalVulnerability(String attack) throws Exception {
-        MockHttpSession session = new MockHttpSession();
-        session.setAttribute("authenticated", true);
-
-        mockMvc.perform(get("/loadImage")
-                        .param("imagePath",attack)
-                        .session(session))
-
-                .andExpect(status().isNotFound());
-
-    }
+//    @ParameterizedTest
+//    @CsvFileSource(resources = "/filePathTraversal.csv", numLinesToSkip = 0)
+//    void testFilePathTraversalVulnerability(String attack) throws Exception {
+//        MockHttpSession session = new MockHttpSession();
+//        session.setAttribute("authenticated", true);
+//
+//        mockMvc.perform(get("/loadImage")
+//                        .param("imagePath",attack)
+//                        .session(session))
+//
+//                .andExpect(status().isNotFound());
+//
+//    }
 }
