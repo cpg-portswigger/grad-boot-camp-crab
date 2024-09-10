@@ -39,17 +39,10 @@ jobs:
       run: |
           cd vulnerable-web-app
           ./gradlew build
-
-    - name: Deploy and run on EC2 instance
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.CRABPEM }}
-        SOURCE: "./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar"
-        REMOTE_HOST: "ec2-13-60-29-54.eu-north-1.compute.amazonaws.com"
-        REMOTE_USER: "ec2-user"
-        TARGET: "/home/ec2-user/crab"
-        SCRIPT_AFTER: |
-          java -jar /home/ec2-user/crab/vulnerable-web-app-1.0-SNAPSHOT.jar
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
           
 
     - name: Set up SSH
