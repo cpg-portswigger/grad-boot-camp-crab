@@ -46,6 +46,9 @@ jobs:
         REMOTE_HOST: "ec2-13-60-29-54.eu-north-1.compute.amazonaws.com"
         REMOTE_USER: "ec2-user"
         TARGET: "/home/ec2-user/crab"
+        SCRIPT_AFTER: |
+          cd /home/ec2-user/crab/vulnerable-web-app
+          ./gradlew run
 
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
