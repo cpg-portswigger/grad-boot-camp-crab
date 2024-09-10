@@ -40,21 +40,21 @@ jobs:
           cd vulnerable-web-app
           ./gradlew build
 
-    - name: Upload JAR Artefact
-      uses: actions/upload-artifact@v4
-      with:
-        name: jar-file
-        path: ./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Download JAR Artefact
-      uses: actions/download-artifact@v4
-      with:
-        name: jar-file
+#    - name: Upload JAR Artefact
+#      uses: actions/upload-artifact@v4
+#      with:
+#        name: jar-file
+#        path: ./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar
+#
+#  deploy:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    steps:
+#
+#    - name: Download JAR Artefact
+#      uses: actions/download-artifact@v4
+#      with:
+#        name: jar-file
 
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.3
@@ -63,7 +63,7 @@ jobs:
 
     - name: Copy JAR file to EC2
       run: |
-        scp -o StrictHostKeyChecking=no vulnerable-web-app-1.0-SNAPSHOT.jar ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }}:/home/${{ secrets.AWS_USER }}/vulnerable-web-app.jar
+        scp -o StrictHostKeyChecking=no ./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }}:/home/${{ secrets.AWS_USER }}/vulnerable-web-app.jar
 
     - name: Start Java Application
       run: |
