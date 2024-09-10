@@ -65,6 +65,10 @@ jobs:
       run: |
         scp -o StrictHostKeyChecking=no ./vulnerable-web-app/build/libs/vulnerable-web-app-1.0-SNAPSHOT.jar ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }}:/home/${{ secrets.AWS_USER }}/vulnerable-web-app.jar
 
+    - name: Kill previous web app processes
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }} 'pkill -9 -f *vulnerable-web-app* || echo "No process to kill"'
+
     - name: Start Java Application
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_USER }}@${{ secrets.AWS_HOST }} 'nohup java -jar /home/${{ secrets.AWS_USER }}/vulnerable-web-app.jar > /dev/null 2>&1 &'
