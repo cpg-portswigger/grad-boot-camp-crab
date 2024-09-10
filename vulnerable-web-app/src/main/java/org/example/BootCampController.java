@@ -76,7 +76,7 @@ public class BootCampController
             session.setAttribute("authenticated", true);
             Cookie authCookie = new Cookie("authenticated", "true");
             authCookie.setHttpOnly(true);
-            authCookie.setSecure(true);
+//            authCookie.setSecure(true);
             response.addCookie(authCookie);
             return "redirect:/secure/";
         }
