@@ -1,6 +1,7 @@
 package org.example;
 
 import jakarta.servlet.http.Cookie;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -88,4 +89,14 @@ class BootCampControllerTest {
 //                .andExpect(status().isNotFound());
 //
 //    }
+
+    @Test
+    void testXSSAttack() throws Exception {
+        MockHttpServletRequestBuilder request = get("/xssattack")
+                .param("name", "<script>alert(1)</script>");
+
+        mockMvc.perform(request)
+                .andExpect(status().is2xxSuccessful())
+                .andExpect(content().string(Matchers.containsString("<script>alert(1)</script>")));
+    }
 }
