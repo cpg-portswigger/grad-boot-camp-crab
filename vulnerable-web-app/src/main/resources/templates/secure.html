@@ -22,6 +22,12 @@
           <img th:src="@{'/loadImage?imagePath=images/super_secure.jpg'}" alt="You can't get past me!">
         </div>
       </div>
+
+      <button>
+        <a href="/xssattack?name=Crab">
+          Explore our XSS attack page.
+        </a>
+      </button>
     </main>
   </body>
 </html>

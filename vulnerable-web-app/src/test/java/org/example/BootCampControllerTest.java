@@ -89,6 +89,13 @@ class BootCampControllerTest {
 //                .andExpect(status().isNotFound());
 //
 //    }
+    @Test
+    void testFilePathTraversalAttack() throws Exception {
+        MockHttpServletRequestBuilder request = get("/loadImage")
+                .param("imagePath", "etc/passwd");
+
+        mockMvc.perform(request).andExpect(status().is2xxSuccessful());
+    }
 
     @Test
     void testXSSAttack() throws Exception {
