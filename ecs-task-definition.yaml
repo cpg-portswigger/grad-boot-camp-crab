@@ -1,4 +1,4 @@
-taskDefinitionArn: arn:aws:ecs:eu-west-1:658786808637:task-definition/grad-bootcamp-crab-task-def:1
+family: grad-bootcamp-crab-task-def
 containerDefinitions:
   - name: grad-bootcamp-crab-web-app
     image: 658786808637.dkr.ecr.eu-west-1.amazonaws.com/grad-bootcamp-crab:latest
@@ -20,39 +20,20 @@ containerDefinitions:
       options:
         awslogs-group: /ecs/grad-bootcamp-crab-task-def
         mode: non-blocking
-        awslogs-create-group: 'true'
+        awslogs-create-group: "true"
         max-buffer-size: 25m
         awslogs-region: eu-west-1
         awslogs-stream-prefix: ecs
       secretOptions: []
     systemControls: []
-family: grad-bootcamp-crab-task-def
 executionRoleArn: arn:aws:iam::658786808637:role/ecsTaskExecutionRole
 networkMode: awsvpc
-revision: 1
-volumes: []
-status: ACTIVE
-requiresAttributes:
-  - name: com.amazonaws.ecs.capability.logging-driver.awslogs
-  - name: ecs.capability.execution-role-awslogs
-  - name: com.amazonaws.ecs.capability.ecr-auth
-  - name: com.amazonaws.ecs.capability.docker-remote-api.1.19
-  - name: com.amazonaws.ecs.capability.docker-remote-api.1.28
-  - name: ecs.capability.execution-role-ecr-pull
-  - name: com.amazonaws.ecs.capability.docker-remote-api.1.18
-  - name: ecs.capability.task-eni
-  - name: com.amazonaws.ecs.capability.docker-remote-api.1.29
-placementConstraints: []
-compatibilities:
-  - EC2
-  - FARGATE
 requiresCompatibilities:
   - FARGATE
-cpu: '1024'
-memory: '3072'
+cpu: "1024"
+memory: "3072"
 runtimePlatform:
   cpuArchitecture: ARM64
   operatingSystemFamily: LINUX
-registeredAt: '2024-09-11T09:08:34.724Z'
-registeredBy: arn:aws:sts::658786808637:assumed-role/AzureRoleAdmin/charlie.goldstraw@portswigger.net
-tags: []
+volumes: []
+placementConstraints: []
